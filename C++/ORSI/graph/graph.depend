@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1605896008 source:c:\users\user\documents\orsi_bead_1\graph\main.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<deque>
+	<utility>
+	<fstream>
+	<vector>
+	<future>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1606853290 source:c:\users\user\documents\algo2\quicksearch\main.cpp
+	<iostream>
+	<string>
+	<map>
+	<vector>
+

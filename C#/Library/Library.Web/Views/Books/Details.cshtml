@@ -1,0 +1,40 @@
+﻿@model Library.Persistence.Book
+
+@{
+    ViewData["Title"] = "Kötetek";
+}
+
+<h1> @Html.DisplayNameFor(model => model.Name)</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Kötet ID
+            </th>
+            <th>
+                előjegyzés
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Volumes)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                
+                <td>
+                    <a asp-controller="Volumes" asp-action="Details" asp-route-id="@item.Id">Foglalások</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div>
+    <a asp-action="Index">Vissza a katalógushoz</a>
+
+</div>
